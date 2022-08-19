@@ -111,3 +111,22 @@ grid-column: 2/3;
     padding: 2%;
     margin: 3%;
 }
+
+.side-icon h3{
+    padding-left: 10px;
+}
+.bottom-icons{
+    display: grid;
+    grid-auto-flow: column;
+    place-content: end;
+    gap: 10px;
+}
+.bottom-icons button{
+    background-color: #f1f5f9;
+    border: #f1f5f9;
+}
+
+#searchBar{
+    border-radius: 10px;
+    width: 35rem;
+}
