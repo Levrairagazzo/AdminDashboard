@@ -1,19 +1,31 @@
+button{
+    font-family:"Rubik", sans-serif;
+    color: aliceblue;
+    background-color: #0284c7;
+    border-radius: 25%;
+}
+body{
+    font-family:"Rubik", sans-serif;
+    color: aliceblue;
+}
+
+
 .container{
-    background-color: coral;
+    
     display:grid;
     grid-template-columns: 2fr 6fr;
     grid-template-rows: 1fr 4fr;
     /* text-align: center; */
     height: 100vh;
-    padding: 16px;
+    padding: 0px;
     margin: 0px;
-    gap: 15px;
+    gap:0px;
    
 
 }
 
 .sidebar, .top-bar, .main-area{
-    border:solid black;
+    /* border:solid black; */
     
 
 }
@@ -26,6 +38,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 40vh;
+    background-color: #0284c7;
+    
    
 }
 .top-bar{
@@ -34,15 +48,19 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: aliceblue;
+    color: black;
 }
 .main-area{
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
+    color: black;
+    background-color: #f1f5f9;
     
 }
 .projects, .annoucements, .trending{
-    border: solid black;
+    /* border: solid black; */
     padding: 15px;
 }
 .announcements{
@@ -59,8 +77,37 @@ grid-column: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr repeat(3, 3fr);
+    
 
 }
 .projectTitle{
     grid-column: span 2;
+}
+
+.main-side-icon{
+    font-size: 2rem;
+    display: flex;
+    justify-content: left;
+}
+.side-icon{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: left;
+}
+
+.projectList{
+    background-color: white;
+    margin: 3%;
+    padding: 1%;
+    border-left: 10px solid #eab308;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+
+}
+.withoutTitle{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+    padding: 2%;
+    margin: 3%;
 }
